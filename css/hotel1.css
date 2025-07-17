@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  .app-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0f9f4;;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 480px) {
+    .app-container {
+        max-width: 480px;
+    }
+  }
+  
+  /* تكبير الهيدر هنا */
+  .app-header {
+    background-color: #26C6B0;
+    color: white;
+    padding: 20px 15px; /* زيادة البادينج من الأعلى والأسفل */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* زيادة حجم الشعار */
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 18px; /* زيادة المسافة بين الأيقونات */
+  }
+  
+  .header-icons i {
+  font-size: 4rem !important;
+}
+
+  
+  .tab-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fffefe;
+    padding: 12px 0; /* زيادة البادينج */
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem; /* زيادة حجم خط التبويب */
+    color: #8b8b8b; /* اللون الرمادي الافتراضي للنص */
+  }
+  
+  .tab-number {
+    height: 24px; /* زيادة حجم دائرة الرقم */
+    width: 24px;
+    border-radius: 50%;
+    background-color: #9ea19f; /* اللون الرمادي الافتراضي للخلفية */
+    color: white; /* اللون الأبيض الافتراضي للرقم */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* زيادة المسافة */
+    font-size: 0.9rem; /* زيادة حجم رقم التبويب */
+  }
+  
+  /* عند تفعيل التبويب، اجعل لون النص والرقم أخضر */
+  .tab.active {
+    color: #2ACFBA;
+    font-weight: 600; /* جعل الخط أكثر سماكة */
+  }
+  
+  /* عند تفعيل التبويب، اجعل خلفية الرقم أخضر */
+  .tab.active .tab-number {
+    background-color: #2ACFBA;
+  }
+  
+  .arrow {
+    color: #6d5c5c;
+    font-size: 0.8rem;
+  }
+  
+  /* Form container */
+  .form-container {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                url('../z/htl.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px;
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .location-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2dc79e;
+  }
+  
+  .date-input-container {
+    position: relative;
+  }
+  
+  .calendar-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #2dc79e;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+.submit-btn {
+  display: block;              /* لجعل الرابط يمتد كزر */
+  text-align: center;          /* توسيط النص داخل الرابط */
+  text-decoration: none;       /* إزالة الخط السفلي */
+  background-color: #2dc79e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #26b18d;
+}
+
+
+
+
+
+  ذ
+  .info-card {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .info-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .info-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: white;
+  }
+
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

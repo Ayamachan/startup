@@ -1,0 +1,200 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f7fcfa;
+    min-height: 100vh;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #26d7b6;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* Content */
+.content {
+    padding: 15px;
+}
+
+.notification-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.warning-icon {
+    color: #d4af37;
+}
+
+/* Notification Cards */
+.notification-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.notification-indicator {
+    width: 6px;
+    flex-shrink: 0;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.green {
+    background-color: #27ae60;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.notification-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.red-icon, .red-text {
+    color: #e74c3c;
+}
+
+.green-icon, .green-text {
+    color: #27ae60;
+}
+
+.yellow-icon, .yellow-text {
+    color: #f1c40f;
+}
+
+.notification-details {
+    margin-bottom: 15px;
+}
+
+.notification-details p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification-details p:last-child {
+    margin-bottom: 0;
+}
+
+.notification-details i {
+    width: 16px;
+    text-align: center;
+    color: #777;
+}
+
+/* Buttons */
+.action-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.download-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
+
+.details-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.details-button:hover {
+    background-color: #e0e0e0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.confirm-button {
+    background-color: #27ae60;
+    color: white;
+    flex: 1;
+}
+
+.confirm-button:hover {
+    background-color: #219652;
+}
+
+.refuse-button {
+    background-color: #e74c3c;
+    color: white;
+    flex: 1;
+}
+
+.refuse-button:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,128 @@
+* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f7fcfa;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #26d7b6;
+    color: white;
+    padding: 15px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Account Cards */
+.account-types {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.account-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.account-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon-container i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.green {
+    background-color: #27ae60;
+}
+
+.purple {
+    background-color: #9b59b6;
+}
+
+.orange {
+    background-color: #f39c12;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}

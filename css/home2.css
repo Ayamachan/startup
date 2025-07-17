@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f9f4;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F7F7F7;
+  }
+  
+  .header {
+    background-color: #26C6B0;
+    color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 447px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .login-button button {
+  background-color: #ffffff;
+  color: #26C6B0;
+  font-weight: 500;
+  border: 2px solid #26C6B0;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.login-button button:hover {
+  background-color: #26C6B0;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.login-button button {
+  font-family: 'Roboto', sans-serif;
+}
+  
+  /* Welcome Banner */
+  .welcome-banner {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 176px;
+    object-fit: cover;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(161, 141, 141, 0.3);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .banner-title {
+    color: rgb(255, 241, 241);
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+  
+  .banner-text {
+    color: rgb(0, 0, 0);
+    font-size: 0.875rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    background-color: #F7F7F7;
+    padding-bottom: 80px;
+  }
+  
+  .service-card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-bottom: 1px solid #E5E7EB;
+    cursor: pointer;
+  }
+  
+  .service-image-container {
+    flex-shrink: 0;
+    width: 74px;
+    height: 64px;
+    margin-right: 16px;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .service-content {
+    flex-grow: 1;
+  }
+  
+  .service-title {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .service-description {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  /*  */
+  /* Footer */
+  .footer {
+    background-color: #69938d;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    margin-top: auto;
+}
+
+.footer h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #privacy-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  #privacy-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    background-color: rgb(252, 254, 253);
+    max-width: 448px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .login-link {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #26C6B0;
+  font-weight: 500;
+  border: 2px solid #26C6B0;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-link:hover {
+  background-color: #26C6B0;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+ 
+
+
+  

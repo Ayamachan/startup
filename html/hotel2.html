@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Résultats de recherche d'hôtel</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/hotel2.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo">Santéria</div>
+            <div class="header-icons">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Steps navigation -->
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number"><span>1</span></div>
+                <div class="step-name">Infos hôtel</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step active">
+                <div class="step-number"><span>2</span></div>
+                <div class="step-name">Choix hôtel</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-number"><span>3</span></div>
+                <div class="step-name">Confirmation</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-number"><span>4</span></div>
+                <div class="step-name">Paiement</div>
+            </div>
+        </div>
+
+        <!-- Back button and title -->
+        <div class="search-result-header">
+            <a href="hotel1.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+
+            <h2>Réultat de la recherche</h2>
+        </div>
+
+        <!-- Hotel list -->
+        <div class="hotel-list">
+            <div class="hotel-card">
+                <img src="../z/ht1.png" alt="Hotel Luxe">
+                <div class="hotel-details">
+                    <h3>Hotel Luxe</h3>
+                    <p class="distance">Distance de l'hôpital: 4 km</p>
+                    <p class="price">100€ par nuit</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4/5
+                    </div>
+                    <div class="hotel-buttons">
+                        <button class="details-btn">Afficher les détails</button>
+                      <a href="hotel3.html" class="choose-btn">Choisir</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="../z/ht2.png" alt="Hotel Riviera">
+                <div class="hotel-details">
+                    <h3>Hotel Riviera</h3>
+                    <p class="distance">Distance de l'hôpital: 2 km</p>
+                    <p class="price">110€ par nuit</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4/5
+                    </div>
+                    <div class="hotel-buttons">
+                        <button class="details-btn">Afficher les détails</button>
+                       <a href="hotel3.html" class="choose-btn">Choisir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="../z/ht3.png" alt="Hotel City Central">
+                <div class="hotel-details">
+                    <h3>Hotel City Central</h3>
+                    <p class="distance">Distance de l'hôpital: 5 km</p>
+                    <p class="price">90€ par nuit</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 3/5
+                    </div>
+                    <div class="hotel-buttons">
+                        <button class="details-btn">Afficher les détails</button>
+                        <a href="hotel3.html" class="choose-btn">Choisir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/hotel2.js"></script>
+</body>
+</html>

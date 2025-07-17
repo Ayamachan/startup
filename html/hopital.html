@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santéri - Trouvez votre hôpital</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <meta name="description" content="Application de recherche d'hôpitaux et de réservation de consultations médicales" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hopital.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">Santéria</h1>
+    <div class="header-icons">
+        <span class="icon bell-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+            </svg>
+        </span>
+        <span class="icon menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+        </span>
+    </div>
+</header>
+
+    <nav class="tab-navigation">
+        <div class="tab">
+            <div class="tab-number">1</div>
+            <div class="tab-name">Recherche</div>
+        </div>
+        <div class="tab active">
+            <div class="tab-number">2</div>
+            <div class="tab-name">réservation</div>
+        </div>
+        <div class="tab">
+            <div class="tab-number">3</div>
+            <div class="tab-name">Confirmation</div>
+        </div>
+        <div class="tab">
+            <div class="tab-number">4</div>
+            <div class="tab-name">Paiement</div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h2 class="content-title">Résultat de la recherche</h2>
+        <div class="hospitals-container" id="hospitals-container">
+            </div>
+    </main>
+
+    <script src="/script/hopscript.js"></script>
+</body>
+</html>

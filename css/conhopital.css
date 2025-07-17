@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .app-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0f9f4;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 480px) {
+    .app-container {
+        max-width: 480px;
+    }
+  }
+  
+  /* تكبير الهيدر هنا */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2dc79e;
+    color: white;
+    padding: 10px 16px;
+    
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* زيادة حجم الشعار */
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 18px; /* زيادة المسافة بين الأيقونات */
+  }
+  
+  .header-icons i {
+    font-size: 3rem; /* زيادة حجم الأيقونات */
+  }
+  
+  .tab-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    padding: 12px 0; /* زيادة البادينج */
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem; /* زيادة حجم خط التبويب */
+    color: #8b8b8b;
+  }
+  
+  .tab.active {
+    color: #2ACFBA;
+    font-weight: 600; /* جعل الخط أكثر سماكة */
+  }
+  
+  .tab-number {
+    height: 24px; /* زيادة حجم دائرة الرقم */
+    width: 24px;
+    border-radius: 50%;
+    background-color: lab(80.04% 0.7 0.24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* زيادة المسافة */
+    font-size: 0.9rem; /* زيادة حجم رقم التبويب */
+  }
+  
+  .tab.active .tab-number {
+    background-color: #2ACFBA;
+  }
+  /* Back button */
+  .back-button {
+    background-color: #eafdfa;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 5px 15px;
+    color: #2dc79e;
+    cursor: pointer;
+  }
+  
+  /* Confirmation title */
+  .confirmation-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 20px 20px;
+  }
+  
+  /* Information cards */
+  .info-card {
+    background-color: white;
+    margin: 0 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  
+  
+  .modify-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #2dc79e;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .info-content {
+    padding: 15px;
+  }
+  
+  .info-content p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .cancel-btn {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .payment-btn {
+    background-color: #2dc79e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  

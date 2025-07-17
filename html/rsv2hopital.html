@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéria - Formulaire de demande médicale</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="../css/rsv2hopital.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">Santéria</div>
+            <div class="header-icons">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </header>
+
+        <nav class="tab-navigation">
+            <div class="tab">
+                <div class="tab-number">1</div>
+                <div class="tab-name">Recherche</div>
+            </div>
+            <div class="tab active">
+                <div class="tab-number">2</div>
+                <div class="tab-name">réservation</div>
+            </div>
+            <div class="tab">
+                <div class="tab-number">3</div>
+                <div class="tab-name">Confirmation</div>
+            </div>
+            <div class="tab">
+                <div class="tab-number">4</div>
+                <div class="tab-name">Paiement</div>
+            </div>
+        </nav>
+
+        <main>
+            <h1 class="hdfrm">Formulaire de demande médicale</h1>
+
+            <form id="medicalForm">
+                <section class="form-section">
+                    <h2 class="section-title">1- Informations du patient</h2>
+
+                    <div class="form-group">
+                        <label for="fullName">Nom complet (comme dans le passeport)</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Entrez le nom complet">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nationality">Nationalité</label>
+                        <div class="select-with-icon">
+                            <select id="nationality" name="nationality" autocomplete="country">
+                                <option value="">Sélectionnez une nationalité</option>
+                                <option value="DZ">Algérie</option>
+                                <option value="DE">Allemagne</option>
+                                <option value="FR">France </option>
+                                <option value="TR">Turquie</option>
+                                <option value="TN">Tunisie </option>
+                                <option value="BE">Belgique </option>
+                                <option value="CA">Canada </option>
+                                <option value="CH">Suisse</option>
+                                <option value="ES">Espagne</option>
+                                <option value="TH">Thaïlande </option>
+                                <option value="JO">Jordanie </option>
+                                <option value="US">États-Unis</option>
+                                <option value="IT">Italie</option>
+                                <option value="MY">Malaisie </option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthDate">Date de Naissance</label>
+                        <div class="input-with-icon">
+                            <input type="date" id="birthDate" name="birthDate" autocomplete="bday">
+                            <i class="fas fa-calendar-alt date-picker-icon"></i>
+                        </div>
+                        <div id="birthDateError" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passportNumber">Numéro de Passeport</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="passportNumber" name="passportNumber" autocomplete="off" placeholder="123 123 123">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="passportExpiry">Date d'expiration du Passeport</label>
+                        <div class="input-with-icon">
+                            <input type="date" id="passportExpiry" name="passportExpiry" autocomplete="off">
+                            <i class="fas fa-calendar-alt date-picker-icon"></i>
+                        </div>
+                        <div id="passportExpiryError" class="error-message"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Numéro de téléphone (avec indicatif pays)</label>
+                        <div class="phone-input-container">
+                            <div class="input-with-icon">
+                                <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" class="phone-input" placeholder=" 60 00 00 00 ">
+                                <i class="fas fa-phone phone-icon"></i>
+                            </div>
+                            <span id="valid-msg" class="hide">✓ Valid</span>
+                            <span id="error-msg" class="hide"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="exemple@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2 class="section-title">2- Informations sur l'état de santé</h2>
+
+                    <div class="form-group">
+                        <label for="diagnosis">Diagnostic initial</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="diagnosis" name="diagnosis" autocomplete="off" placeholder="Décrivez le diagnostic">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medicalHistory">Bref historique médical</label>
+                        <textarea id="medicalHistory" name="medicalHistory" autocomplete="off" placeholder="Entrez les antécédents médicaux"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" id="uploadButton" class="upload-btn">
+                            <i class="uploadFile"></i> Télécharger les rapports médicaux (PDF, JPG)
+                        </button>
+                        <input type="file" id="fileUpload" hidden accept=".pdf,.jpg,.jpeg,.png">
+                        <div id="fileList" class="file-list"></div>
+                        <div class="form-buttons">
+                            <button type="button" id="backButton" class="btn back-btn">Retour</button>
+                            <button type="submit" id="confirmButton" class="btn confirm-btn">Confirmer</button>
+                        </div>
+                </form>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script src="../script/rsv2hopital.js"></script>
+</body>
+</html>

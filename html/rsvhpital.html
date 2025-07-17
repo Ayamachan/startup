@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Réservation d'hôpital</title>
+ <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="../css/rsvhoptal.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">Santéri</div>
+            <div class="header-icons">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </header>
+
+        <nav class="tab-navigation">
+            <div class="tab active">
+                <div class="tab-number">1</div>
+                <div class="tab-name">Recherche</div>
+            </div>
+            <div class="tab ">
+                <div class="tab-number">2</div>
+                <div class="tab-name">réservation</div>
+            </div>
+            <div class="tab">
+                <div class="tab-number">3</div>
+                <div class="tab-name">Confirmation</div>
+            </div>
+            <div class="tab">
+                <div class="tab-number">4</div>
+                <div class="tab-name">Paiement</div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h1>Données de réservation d'hôpital</h1>
+
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-group">
+                    <label for="country">Sélectionner un pays</label>
+                    <div class="select-wrapper">
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="france">France</option>
+                            <option value="belgique">Belgique</option>
+                            <option value="suisse">Suisse</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="italie">Italie</option>
+
+                            <option value="turke">turke</option>
+                            <option value="algerie">Algérie</option>
+                            <option value="tunisie">Tunisie</option>
+                            <option value="egypte">Égypte</option>
+                            <option value="jordanie">Jordanie</option>
+                            <option value="emirats-arabes-unis">Émirats Arabes Unis</option>
+
+                            <option value="canada">Canada</option>
+                            <option value="usa">États-Unis</option>
+                            <option value="australie">Australie</option>
+                            <option value="japon">Japon</option>
+                            <option value="chine">Chine</option>
+                        </select>
+                        <span class="material-symbols-outlined select-arrow">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Choisir une spécialité médicale</label>
+                    <div class="select-wrapper">
+                        <select id="specialty" name="specialty" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="cardiologie">Cardiologie (أمراض القلب)</option>
+                            <option value="dermatologie">Dermatologie (أمراض الجلد)</option>
+                            <option value="neurologie">Neurologie (أمراض الأعصاب)</option>
+                            <option value="ophtalmologie">Ophtalmologie (طب العيون)</option>
+                            <option value="pediatrie">Pédiatrie (طب الأطفال)</option>
+                            <option value="orthopedie">Orthopédie (طب العظام)</option>
+                            <option value="gastro-enterologie">Gastro-entérologie (أمراض الجهاز الهضمي)</option>
+
+                            <option value="chirurgie-generale">Chirurgie générale (جراحة عامة)</option>
+                            <option value="chirurgie-cardiaque">Chirurgie cardiaque (جراحة القلب)</option>
+                            <option value="neurochirurgie">Neurochirurgie (جراحة الأعصاب)</option>
+
+                            <option value="oncologie">Oncologie (علاج الأورام)</option>
+                            <option value="endocrinologie">Endocrinologie (أمراض الغدد)</option>
+                            <option value="pneumologie">Pneumologie (أمراض الرئة)</option>
+                            <option value="rhumatologie">Rhumatologie (أمراض المفاصل)</option>
+                            <option value="urologie">Urologie (أمراض المسالك البولية)</option>
+                            <option value="gynecologie">Gynécologie (طب النساء)</option>
+                            <option value="psychiatrie">Psychiatrie (طب النفس)</option>
+                            <option value="medecine-interne">Médecine interne (طب باطني)</option>
+                        </select>
+                        <span class="material-symbols-outlined select-arrow">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Choisir une ville</label>
+                    <div class="select-wrapper">
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="paris">Paris</option>
+                            <option value="lyon">Lyon</option>
+                            <option value="marseille">Marseille</option>
+                            <option value="bordeaux">Bordeaux</option>
+                            <option value="toulouse">Toulouse</option>
+                            <option value="nice">Nice</option>
+                            <option value="nantes">Nantes</option>
+
+                            <option value="bruxelles">Bruxelles (Belgique)</option>
+                            <option value="geneve">Genève (Suisse)</option>
+                            <option value="berlin">Berlin (Allemagne)</option>
+                            <option value="madrid">Madrid (Espagne)</option>
+                            <option value="rome">Rome (Italie)</option>
+                            <option value="londres">Londres (Royaume-Uni)</option>
+                            <option value="casablanca">Casablanca (Maroc)</option>
+
+                            <option value="tunis">Tunis (Tunisie)</option>
+                            <option value="le-caire">Le Caire (Égypte)</option>
+                            <option value="dubai">Dubai (Émirats)</option>
+                            <option value="montreal">Montréal (Canada)</option>
+                            <option value="new-york">New York (USA)</option>
+                        </select>
+                        <span class="material-symbols-outlined select-arrow">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="hospital">Nom de l'hôpital (optionnelle)</label>
+                    <input type="text" id="hospital" name="hospital" placeholder="Spécifier un établissement">
+                </div>
+
+                <div class="form-group additional-services">
+                    <h3>Services Supplémentaires</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="translation" name="services" value="translation">
+                        <label for="translation">Fournit une traduction en arabe</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="accessibility" name="services" value="accessibility">
+                        <label for="accessibility">Installations pour personnes handicapées</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Suivant</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/script/rsvhopital.js"></script>
+</body>
+</html>

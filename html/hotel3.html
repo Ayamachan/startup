@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Confirmation</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/hotel3.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">Santéria</div>
+            <div class="header-icons">
+                <div class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number"><span>1</span></div>
+                <div class="step-name">Infos hôtel</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-number"><span>2</span></div>
+                <div class="step-name">Choix hôtel</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step active">
+                <div class="step-number"><span>3</span></div>
+                <div class="step-name">Confirmation</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-number"><span>4</span></div>
+                <div class="step-name">Paiement</div>
+            </div>
+        </div>
+
+        <div class="confirmation-content">
+            <div class="confirmation-header">
+                <i class="fas fa-arrow-left back-btn"></i>
+                <h2>Confirmation</h2>
+            </div>
+            <img src="" alt="Hotel Room" class="hotel-image" id="hotel-image">
+            <div class="hotel-info">
+                <h3 id="hotel-name"><span class="rating"><i class="fas fa-star"></i> <span id="hotel-rating"></span></span></h3>
+
+            </div>
+            <div class="reservation-details">
+                <div class="section-header">
+                    <h4>Votre réservation</h4>
+                    <button class="modify-btn">
+                        <i class="fas fa-pen"></i> Modifier
+                    </button>
+                </div>
+                <p>Dates de séjour: <span id="stay-dates"></span></p>
+                <p>Nombre de personnes: <span id="num-persons"></span></p>
+                <p>Numéro de réservation: <span id="reservation-number"></span></p>
+            </div>
+            <div class="payment-info">
+                <h4>Payment Information</h4>
+                <p>Prix actuel: $<span id="total-price"></span></p>
+            </div>
+            <button class="confirm-btn">Confirmer la réservation et Passer au Paiement</button>
+            <button class="cancel-btn">Annuler la réservation</button>
+        </div>
+    </div>
+
+    <script src="../script/hotel3.js"></script>
+</body>
+</html>

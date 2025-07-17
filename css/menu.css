@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #26d7b6;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 56px); /* Header height is 56px */
+    background-color: #fff;
+}
+
+/* Menu List */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.icon-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+}
+
+.home-icon {
+    background-color: #4E94F8;
+}
+
+.user-icon {
+    background-color: #4EC1F8;
+}
+
+.file-icon {
+    background-color: #26d7b6;
+}
+
+.security-icon {
+    background-color: #4E94F8;
+}
+
+.language-icon {
+    background-color: #26d7b6;
+}
+
+.about-icon {
+    background-color: #f87c4e;
+}
+
+.contact-icon {
+    background-color: #4E94F8;
+}
+
+.notification-icon {
+    background-color: #4EC1F8;
+}
+
+/* Logout Button */
+.logout-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-button {
+    background-color: #26d7b6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #20c4a6;
+}

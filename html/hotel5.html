@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails De Paiement - Santéria</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/hotel5.css">
+  </head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-title">Santéria</div>
+            <div class="header-icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-item">
+                <div class="step-circle">1</div>
+                <div class="step-name">Infos hôtell</div>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-item">
+                <div class="step-circle">2</div>
+                <div class="step-name">Choix hôtel</div>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-item">
+                <div class="step-circle">3</div>
+                <div class="step-name">Confirmation</div>
+            </div>
+            <div class="progress-arrow">→</div>
+            <div class="progress-item active">
+                <div class="step-circle">4</div>
+                <div class="step-name">Paiement</div>
+            </div>
+        </div>
+
+        <div class="payment-content">
+            <div class="back-button">
+                <i class="fas fa-circle-arrow-left"></i>
+                <span>Détails De Paiement</span>
+            </div>
+
+            <div class="card-image-container">
+                <!-- L'image de la carte sera chargée ici, vous pouvez remplacer le src -->
+                <img id="cardImage" src="../z/payment.png" alt="Carte bancaire">
+            </div>
+
+            <div class="payment-form">
+                <div class="form-group">
+                    <label for="cardNumber">Numéro de carte</label>
+                    <input type="text" id="cardNumber" placeholder="123 123 123">
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Date d'expiration</label>
+                    <input type="text" id="expiryDate" placeholder="MM/AAAA" readonly>
+                    <div id="datePicker" class="date-picker">
+                        <div class="month-year-selector">
+                            <div class="selector-header">
+                                <span>Sélectionner la date d'expiration</span>
+                            </div>
+                            <div class="selector-container">
+                                <div class="month-selector">
+                                    <label>Mois</label>
+                                    <select id="monthSelector">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="year-selector">
+                                    <label>Année</label>
+                                    <select id="yearSelector"></select>
+                                </div>
+                            </div>
+                            <button id="confirmDate" class="confirm-btn">Confirmer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardholderName">Nom du titulaire de la carte</label>
+                    <input type="text" id="cardholderName">
+                </div>
+
+                <div class="form-group">
+                    <label for="cvvCode">Code CVV</label>
+                    <input type="text" id="cvvCode" placeholder="123">
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="saveCard">
+                    <label for="saveCard">Enregistrer la carte et les détails en toute sécurité</label>
+                </div>
+
+                <button class="payment-button">Paiement final</button>
+            </div>
+        </div>
+    </div>
+    <script src="../script/hotel5.js"></script>
+</body>
+</html>

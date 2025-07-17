@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fcfefd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f0f9f4;
+    height: 100vh;
+    display: flex; /* لجعل العناصر الداخلية قابلة للتوزيع */
+    flex-direction: column; /* لترتيب العناصر عمودياً */
+    /* border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: auto; */
+}
+
+.header {
+    background-color:#2dc79e;
+    padding: 16px;
+    
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px; /* إضافة مسافة أسفل الهيدر */
+}
+
+.form {
+    padding: 20px;
+    background-color: #f0f9f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h2 {
+    text-align: center;
+    margin-top: 30px; /* تقليل الهامش العلوي قليلاً */
+    margin-bottom: 30px; /* زيادة الهامش السفلي */
+    font-size: 18px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px; /* زيادة المسافة بين حقول الإدخال */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.form a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; /* زيادة المسافة أسفل رابط "نسيت كلمة المرور؟" */
+    font-size: 14px;
+    color: #ecf7f3;
+    text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #26C6B0;
+  color: rgb(168, 27, 27);
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none; /* مهم باش ماتجيش تحتها خط */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c4d6d3;
+}
+
+
+
+.divider {
+    text-align: center;
+    margin: 30px 0; /* زيادة المسافة أعلى وأسفل الخط الفاصل */
+    font-size: 14px;
+    color: #555;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px; /* إضافة مسافة أسفل زر جوجل */
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.bottom-text span {
+    margin-right: 10px; /* إضافة هامش أيمن للجملة */
+}
+
+.bottom-text a {
+    color: #2ac087;
+    text-decoration: none;
+}
+.bottom-text .no-account {
+    margin-bottom: 10px; /* إضافة هامش سفلي للجملة */
+    margin-right: 5px; /* لإضافة مسافة بين الجملة والرابط */
+    display: inline-block; /* لضمان تطبيق الهامش السفلي */
+}
+
+.bottom-text a {
+    color: #2ac087;
+    text-decoration: none;
+}
+@media (max-width: 400px) {
+    .header {
+        font-size: 20px;
+    }
+
+    /* .form h2 {
+        font-size: 16px;
+    } */
+}

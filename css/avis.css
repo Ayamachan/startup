@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .app-container {
+    max-width: 396px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Header Styles */
+  .app-header {
+    background-color: #26c6a4;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Rating Section */
+  .rating-section p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .star-rating {
+    color: #ffc107;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 15px;
+    color: #999;
+  }
+  
+  /* Reviews Section */
+  .reviews-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .review-card {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+  }
+  
+  .review-right {
+    flex: 1;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  
+  .review-header h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .review-stars {
+    font-size: 12px;
+    color: #ffc107;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  .review-content {
+    font-size: 14px;
+  }
+  
+  /* Button Section */
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #26c6a4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .back-button {
+    background-color: #f0f0f0;
+    color: #666;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 480px) {
+    .app-container {
+      border: none;
+      width: 100%;
+    }
+  }
+  .notification-icon,.menu-icon,.star-rating {
+    cursor: pointer;
+  }
+  
+ 

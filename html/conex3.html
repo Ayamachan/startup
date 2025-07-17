@@ -1,0 +1,186 @@
+   
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéria - Inscription</title>
+    <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="../css/conex3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <h2 class="header-title">Santéria</h2>
+            </header>
+            <div class="card-content">
+                <div class="text-center mb-6">
+                    <h3 class="content-title">S'inscrire</h3>
+                    <p class="content-subtitle">Il ne faut qu'une minute pour créer votre compte.</p>
+                </div>
+               
+                <form id="registerForm" class="form-space">
+                    <div class="input-container">
+                        <input type="text"  name="fullname" autocomplete="name"  placeholder="Nom Complet" class="input-field">
+                    </div>
+                   
+                    <div class="input-container">
+                        <input type="email" name="email" autocomplete="email" placeholder="Email" class="input-field">
+                        <i class="fa-solid fa-envelope icon-right"></i>
+                    </div>
+                   
+                    <div class="input-container">
+                        <input type="password"  name="password" autocomplete="new-password" id="password" placeholder="Mot de passe" class="input-field">
+                        <i class="fa-solid fa-eye icon-right toggle-password"></i>
+                    </div>
+                   
+                    <div class="input-container">
+                        <input type="tel"   name="phone" autocomplete="tel"  placeholder="Numéro de téléphone" class="input-field">
+                        <i class="fa-solid fa-phone icon-right"></i>
+                    </div>
+                   
+                    <div class="dropdown-container">
+                         <input type="hidden" name="gender" id="selected-gender">
+                        <div class="dropdown">
+                            <div class="dropdown-btn">
+                               
+                                <span class="selected-option">Sexe</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item" data-value="homme">Homme</div>
+                                <div class="dropdown-item" data-value="femme">Femme</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="dropdown-container">
+                        <input type="hidden" name="country" id="selected-country">
+                        <div class="dropdown">
+                            <div class="dropdown-btn">
+                                
+                                <span class="selected-option">Pays</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item" data-value="algerie">Algérie</div>
+                                <div class="dropdown-item" data-value="tunisie">Tunisie</div>
+                                <div class="dropdown-item" data-value="maroc">Maroc</div>
+                                <div class="dropdown-item" data-value="france">France</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="dropdown-container">
+                         <input type="hidden" name="wilaya" id="selected-wilaya">
+                        <div class="dropdown">
+                            <div class="dropdown-btn">
+                               
+                                <span class="selected-option">Wilaya</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-content wilaya-content">
+                                <div class="dropdown-item" data-value="1">01 - Adrar</div>
+                                <div class="dropdown-item" data-value="2">02 - Chlef</div>
+                                <div class="dropdown-item" data-value="3">03 - Laghouat</div>
+                                <div class="dropdown-item" data-value="4">04 - Oum El Bouaghi</div>
+                                <div class="dropdown-item" data-value="5">05 - Batna</div>
+                                <div class="dropdown-item" data-value="6">06 - Béjaïa</div>
+                                <div class="dropdown-item" data-value="7">07 - Biskra</div>
+                                <div class="dropdown-item" data-value="8">08 - Béchar</div>
+                                <div class="dropdown-item" data-value="9">09 - Blida</div>
+                                <div class="dropdown-item" data-value="10">10 - Bouira</div>
+                                <div class="dropdown-item" data-value="11">11 - Tamanrasset</div>
+                                <div class="dropdown-item" data-value="12">12 - Tébessa</div>
+                                <div class="dropdown-item" data-value="13">13 - Tlemcen</div>
+                                <div class="dropdown-item" data-value="14">14 - Tiaret</div>
+                                <div class="dropdown-item" data-value="15">15 - Tizi Ouzou</div>
+                                <div class="dropdown-item" data-value="16">16 - Alger</div>
+                                <div class="dropdown-item" data-value="17">17 - Djelfa</div>
+                                <div class="dropdown-item" data-value="18">18 - Jijel</div>
+                                <div class="dropdown-item" data-value="19">19 - Sétif</div>
+                                <div class="dropdown-item" data-value="20">20 - Saïda</div>
+                                <div class="dropdown-item" data-value="21">21 - Skikda</div>
+                                <div class="dropdown-item" data-value="22">22 - Sidi Bel Abbès</div>
+                                <div class="dropdown-item" data-value="23">23 - Annaba</div>
+                                <div class="dropdown-item" data-value="24">24 - Guelma</div>
+                                <div class="dropdown-item" data-value="25">25 - Constantine</div>
+                                <div class="dropdown-item" data-value="26">26 - Médéa</div>
+                                <div class="dropdown-item" data-value="27">27 - Mostaganem</div>
+                                <div class="dropdown-item" data-value="28">28 - M'Sila</div>
+                                <div class="dropdown-item" data-value="29">29 - Mascara</div>
+                                <div class="dropdown-item" data-value="30">30 - Ouargla</div>
+                                <div class="dropdown-item" data-value="31">31 - Oran</div>
+                                <div class="dropdown-item" data-value="32">32 - El Bayadh</div>
+                                <div class="dropdown-item" data-value="33">33 - Illizi</div>
+                                <div class="dropdown-item" data-value="34">34 - Bordj Bou Arreridj</div>
+                                <div class="dropdown-item" data-value="35">35 - Boumerdès</div>
+                                <div class="dropdown-item" data-value="36">36 - El Tarf</div>
+                                <div class="dropdown-item" data-value="37">37 - Tindouf</div>
+                                <div class="dropdown-item" data-value="38">38 - Tissemsilt</div>
+                                <div class="dropdown-item" data-value="39">39 - El Oued</div>
+                                <div class="dropdown-item" data-value="40">40 - Khenchela</div>
+                                <div class="dropdown-item" data-value="41">41 - Souk Ahras</div>
+                                <div class="dropdown-item" data-value="42">42 - Tipaza</div>
+                                <div class="dropdown-item" data-value="43">43 - Mila</div>
+                                <div class="dropdown-item" data-value="44">44 - Aïn Defla</div>
+                                <div class="dropdown-item" data-value="45">45 - Naâma</div>
+                                <div class="dropdown-item" data-value="46">46 - Aïn Témouchent</div>
+                                <div class="dropdown-item" data-value="47">47 - Ghardaïa</div>
+                                <div class="dropdown-item" data-value="48">48 - Relizane</div>
+                                <div class="dropdown-item" data-value="49">49 - El M'ghair</div>
+                                <div class="dropdown-item" data-value="50">50 - El Meniaa</div>
+                                <div class="dropdown-item" data-value="51">51 - Ouled Djellal</div>
+                                <div class="dropdown-item" data-value="52">52 - Bordj Badji Mokhtar</div>
+                                <div class="dropdown-item" data-value="53">53 - Béni Abbès</div>
+                                <div class="dropdown-item" data-value="54">54 - Timimoun</div>
+                                <div class="dropdown-item" data-value="55">55 - Touggourt</div>
+                                <div class="dropdown-item" data-value="56">56 - Djanet</div>
+                                <div class="dropdown-item" data-value="57">57 - In Salah</div>
+                                <div class="dropdown-item" data-value="58">58 - In Guezzam</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">J'accepte les conditions d'utilisation et la politique de confidentialité</label>
+                    </div>
+                   
+                   <input type="hidden" id="user_type" name="user_type">
+
+  <button type="submit" class="submit-btn">Créer un compte</button>
+</form>
+
+
+                   
+                    <div class="divider">
+                        <span>ou</span>
+                    </div>
+                   
+                    <button type="button" class="google-btn">
+                        <img src="../z/google.png" alt="Google" class="google-icon">
+                        <span>Inscrivez-vous avec Google</span>
+                    </button>
+                   
+                    <div class="login-link">
+                        Déjà inscrit? <a href="#" class="login-text">Se connecter</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <script src="../script/conex3.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+    
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Confirmation</title>
+    <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="../css/conhopital.css">
+
+</head>
+
+<body>
+    <div class="app-container">
+    <header class="app-header">
+        <div class="logo">Santéria</div>
+        <div class="header-icons">
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </header>
+    
+    <nav class="tab-navigation">
+        <div class="tab">
+            <div class="tab-number">1</div>
+            <div class="tab-name">Recherche</div>
+        </div>
+        
+        <div class="tab">
+            <div class="tab-number">3</div>
+            <div class="tab-name">réservation</div>
+        </div>
+        <div class="tab active">
+            <div class="tab-number">3</div>
+            <div class="tab-name">Confirmation</div>
+        </div>
+        <div class="tab">
+            <div class="tab-number">4</div>
+            <div class="tab-name">Paiement</div>
+        </div>
+    </nav>
+
+<!-- Back button -->
+<div class="back-button">
+    <i class="fas fa-arrow-left"></i>
+</div>
+
+<!-- Confirmation title -->
+<div class="confirmation-title">Confirmation</div>
+
+<!-- Patient details -->
+<div class="info-card">
+    <div class="info-header">
+        <h3> Détails de la Réservation</h3>
+        <button class="modify-btn">
+            <i class="fas fa-pencil-alt"></i>
+            Modifier
+        </button>
+    </div>
+
+
+
+            <div class="info-content">
+                <p><strong>Nom du patient :</strong> Yamin Nacet</p>
+                <p><strong>Numéro de passeport :</strong> 16345678</p>
+                <p><strong>Téléphone :</strong> +213 07 45 67 89</p>
+                <p><strong>Email :</strong> jean.dupont@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Hospital details -->
+       <div class="info-card">
+        <div class="info-header">
+            <h3>Hôpital sélectionné</h3>
+        </div>
+        <div class="info-content" id="hospitalInfoContent">
+            <p><strong>Nom d'hôpital :</strong> <span id="hospitalName"></span></p>
+            <p><strong>Spécialisation majeure :</strong> <span id="hospitalSpecialty"></span></p>
+            </div>
+    </div>
+
+        <!-- Medical details 
+      <div class="info-card">
+            <div class="info-header">
+                <h3>Détails médicaux</h3>
+            </div>
+            <div class="info-content">
+                <p><strong>Diagnostic initial :</strong> Hypertension artérielle</p>
+                <p><strong>Nombre de rapports médicaux joints :</strong> 2</p>
+            </div>
+        </div>-->
+
+        <!-- Action buttons -->
+        <div class="action-buttons">
+            <button class="cancel-btn">Annuler la réservation</button>
+            <button class="payment-btn">Passer au Paiement</button>
+        </div>
+    </div>
+
+    <script src="../script/conhopital.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f9f7;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f2f9f7;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2dc79e;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.notification-icon, .menu-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Status tabs */
+.status-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.0rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #2dc79e;
+    font-weight: 500;
+}
+
+
+
+.status-indicator {
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.indicator-bar {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    background-color: #2dc79e;
+    border-radius: 2px;
+    left: 0;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-row {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    font-size: 1.érem; /* تم تعديله من 1,3rem إلى 1.5rem وتصحيح الفاصلة إلى نقطة */
+    color: #837e7e; /* تغيير اللون ليكون أغمق وأكثر وضوحًا من #666 */
+    margin-right: 5px;
+    font-weight: 500; /* إضافة وزن خط متوسط لزيادة الوضوح */
+}
+
+.value {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Button style */
+.evaluate-btn {
+    background-color: #2dc79e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    margin-bottom: 50px;
+    margin-top: 100px; /* إضافة هامش علوي لدفع الزر للأسفل */
+}

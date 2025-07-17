@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Formulaire médical</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="../css/demande1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Santéria</div>
+           
+        </header>
+        
+        <div class="main-content">
+            <section class="section personal-info">
+                <h2>Infos personnelles</h2>
+                
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Nom complet">
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="age" placeholder="Âge">
+                   
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="Téléphone">
+                    <i class="fas fa-phone"></i>
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" id="address" placeholder="Wilaya">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                
+                <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                    Télécharger votre photo (optionnel)
+                </button>
+            </section>
+            
+            <section class="section medical-details">
+                <h2>Détails médicaux</h2>
+                
+                <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                    Télécharger des documents médicaux
+                </button>
+                
+                <p class="hint">Ces rapports médicaux récents vous aideront à avoir un traitement plus précis</p>
+                
+                <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                    Estimation du coût du traitement
+                </button>
+                
+                <p class="hint">Ces documents nous aideront à vous fournir une estimation précise</p>
+            </section>
+            
+            <section class="section required-documents">
+                <h2>Documents justificatifs obligatoires</h2>
+                <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                    Télécharger la Carte d'identité
+                </button>
+                <p class="document-hint">L'identité doit être claire à l'avant et à l'arrière de la carte</p>
+                 <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                    Télécharger un justificatif de situation professionnelle
+                </button>
+               
+                <p class="document-hint">Pour justifier votre activité</p>
+                <button class="action-button">
+                    <i class="fas fa-upload"></i>
+                     Télécharger un justificatif de résidence
+                </button>
+                
+                <p class="document-hint">La preuve de résidence sert à confirmer la résidence et le statut du dossier catégoriel</p>
+            </section>
+            
+            <section class="section terms">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms1">
+                    <label for="terms1">Accepter que les docs soient gérés par la plateforme</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms2">
+                    <label for="terms2">Accepter la prise en charge des soins</label>
+                </div>
+                
+                <p class="terms-note">
+                    <i class="fas fa-info-circle"></i>
+                    Ces documents sont uniquement utilisés pour vérification et prise en charge.
+                </p>
+            </section>
+            
+            <button class="submit-button">Soumettre la demande pour révision</button>
+        </div>
+    </div>
+
+    <script src="../script/demande1.js"></script>
+</body>
+</html>

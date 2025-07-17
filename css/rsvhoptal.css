@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    font-size: 16px; /* زيادة حجم الخط الأساسي */
+  }
+  
+  .app-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0f9f4;;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 480px) {
+    .app-container {
+        max-width: 480px;
+    }
+  }
+  
+  /* تكبير الهيدر هنا */
+  .app-header {
+    background-color: #2ACFBA;
+    color: white;
+    padding: 15px 15px; /* زيادة البادينج من الأعلى والأسفل */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* زيادة حجم الشعار */
+    font-weight: bold;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 18px; /* زيادة المسافة بين الأيقونات */
+  }
+  
+  .header-icons i {
+  font-size: 4rem !important;
+}
+
+  
+  .tab-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fffefe;
+    padding: 12px 0; /* زيادة البادينج */
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem; /* زيادة حجم خط التبويب */
+    color: #8b8b8b;
+    background-color: white;
+  }
+  
+  .tab.active {
+    color: #2ACFBA;
+    font-weight: 600; /* جعل الخط أكثر سماكة */
+  }
+  
+  .tab-number {
+    height: 24px; /* زيادة حجم دائرة الرقم */
+    width: 24px;
+    border-radius: 50%;
+    background-color: #a8bab8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* زيادة المسافة */
+    font-size: 0.9rem; /* زيادة حجم رقم التبويب */
+  }
+  
+  
+  .tab.active .tab-number {
+    background-color: #2ACFBA;
+  }
+  
+  .main-content {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('public/lovable-uploads/451fae8d-62b5-4147-a3ab-d8affbc1f10e.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+    filter: brightness(1.2);
+  }
+  
+  h1 {
+    font-size: 1.6rem; /* زيادة حجم العنوان الرئيسي */
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .reservation-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem; /* زيادة حجم النص */
+    color: #333;
+    font-weight: 500;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 14px 16px; /* زيادة حجم حقول الإدخال */
+    border-radius: 8px; /* زوايا أكثر استدارة */
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .select-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    font-size: 1.2rem; /* زيادة حجم سهم الاختيار */
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .checkbox-group label {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 12px;
+  }
+  
+  .additional-services h3 {
+    font-size: 1.2rem; /* زيادة حجم عناوين الخدمات */
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #2ACFBA;
+    color: white;
+    border: none;
+    border-radius: 30px; /* زوايا أكثر استدارة */
+    padding: 16px; /* زيادة حجم الزر */
+    width: 100%;
+    font-weight: 600; /* خط أكثر سماكة */
+    cursor: pointer;
+    font-size: 1.1rem; /* زيادة حجم نص الزر */
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #25b8a6;
+  }
+  
+  /* تكبير حجم الشيك بوكس */
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #2ACFBA;
+    border-color: #2ACFBA;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: "✓";
+    font-size: 16px; /* زيادة حجم علامة الصح */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* تحسينات للشاشات الصغيرة جداً */
+  @media (max-width: 360px) {
+    .app-header {
+        padding: 18px 12px;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+  }
+  
+  /* تحسينات للشاشات الكبيرة */
+  @media (min-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+    
+    .app-header {
+        padding: 25px 20px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-primary {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+  }
+
+  .btn-primary {
+  background-color: #2dc79e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #009e82;
+}

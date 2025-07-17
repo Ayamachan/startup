@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santéri - Notifications Personnelles</title>
+     <link rel="icon" type="image/png" href="../z/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/menu3.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo">Santéri</div>
+                <div class="header-icons">
+                    <div class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="notification-title">
+            <i class="fas fa-bell warning-icon"></i>
+            <span>Vos Notifications Personnelles</span>
+        </div>
+
+        <!-- Document Request Notification -->
+        <div class="notification-card document-request">
+            <div class="notification-indicator red"></div>
+            <div class="notification-content">
+                <div class="notification-header">
+                    <i class="fas fa-file-alt red-icon"></i>
+                    <span class="notification-type red-text">Demande de document</span>
+                </div>
+                <div class="notification-details">
+                    <p><i class="fas fa-info-circle"></i> Obligatoire : Une copie claire du passeport (première page)</p>
+                    <p><i class="fas fa-clock"></i> Doit être téléchargé dans les 48 heures</p>
+                </div>
+                <button class="action-button download-button">
+                    <i class="fas fa-download"></i>
+                    Télécharger le document
+                </button>
+            </div>
+        </div>
+
+        <!-- Reservation Confirmation Notification -->
+        <div class="notification-card reservation">
+            <div class="notification-indicator green"></div>
+            <div class="notification-content">
+                <div class="notification-header">
+                    <i class="fas fa-check-circle green-icon"></i>
+                    <span class="notification-type green-text">Confirmation de réservation</span>
+                </div>
+                <div class="notification-details">
+                    <p><i class="fas fa-check"></i> Votre rendez-vous à la clinique a été confirmé avec succès !</p>
+                    <p><i class="fas fa-calendar"></i> Du 15 au 20 juillet 2025</p>
+                </div>
+                <button class="action-button details-button">
+                    Afficher les détails
+                </button>
+            </div>
+        </div>
+
+        <!-- Change Notification -->
+        <div class="notification-card change">
+            <div class="notification-indicator yellow"></div>
+            <div class="notification-content">
+                <div class="notification-header">
+                    <i class="fas fa-exclamation-triangle yellow-icon"></i>
+                    <span class="notification-type yellow-text">Avis de changement de nomination</span>
+                </div>
+                <div class="notification-details">
+                    <p><i class="fas fa-exclamation-circle"></i> Vous pouvez retourner à votre hôpital avec une valeur modifiée</p>
+                    <p><i class="fas fa-clock"></i> De 11h30 à 14h00</p>
+                    <p><i class="fas fa-calendar-day"></i> Même date : 20 juillet 2025</p>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-button confirm-button">
+                        <i class="fas fa-check"></i> Confirmer
+                    </button>
+                    <button class="action-button refuse-button">
+                        <i class="fas fa-times"></i> Refuser
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../script/menu3.js"></script>
+</body>
+</html>

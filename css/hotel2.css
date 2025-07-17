@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f9f4;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f0f9f4;
+    min-height: 100vh;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2dc79e;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.notification-icon, .menu-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Steps navigation */
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #939292;
+}
+
+.step.active {
+    color: #2dc79e;
+    font-weight: 500;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #aaaaaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.step.active .step-number {
+    background-color: #2dc79e;
+    color: white;
+}
+
+.step-number span {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.arrow {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* Search result header */
+.search-result-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.back-btn {
+    background-color: #eafdfa;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2dc79e;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.search-result-header h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Hotel list */
+.hotel-list {
+    padding: 0 15px;
+}
+
+.hotel-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hotel-details {
+    padding: 12px;
+}
+
+.hotel-details h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.distance {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2dc79e;
+    margin: 5px 0;
+}
+
+.rating {
+    color: gold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.hotel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.details-btn, .choose-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.details-btn {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.choose-btn {
+    background-color: #2dc79e;
+    color: white;
+}
+.hotel-card img {
+    width: 100%;      /* لجعل الصورة تشغل كامل عرض الـ .hotel-card */
+    height: 200px;    /* ارتفاع ثابت (عدله حسب احتياجك) */
+    object-fit: cover; /* للحفاظ على تناسق الصورة دون تشويه */
+    border-radius: 8px 8px 0 0; /* زوايا مدورة لأعلى الصورة */
+}

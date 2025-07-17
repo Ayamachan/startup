@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #26d7b6;
+    color: white;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Profile Container */
+.profile-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.profile-header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #26d7b6;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.edit-button i {
+    font-size: 0.8rem;
+}
+
+/* Profile Information */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: normal;
+    color: #666;
+}
+
+.info-value {
+    font-weight: normal;
+    text-align: right;
+}
+
+/* Content */
+.content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+    background-color: #f4f4f4;
+}

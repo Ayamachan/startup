@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f9f4;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f0f9f4;
+    min-height: 100vh;
+    position: relative;
+    border: 1px solid #c5c3c3;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2dc79e;
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.notification-icon, .menu-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Steps navigation */
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.step.active {
+    color: #2dc79e;
+    font-weight: 500;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.step.active .step-number {
+    background-color: #2dc79e;
+    color: white;
+}
+
+.step-number span {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Confirmation Content */
+.confirmation-content {
+    padding: 15px;
+   
+}
+
+.confirmation-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.back-btn {
+    color: #2dc79e;
+    font-size: 1.2rem;
+    background-color: #e8f8f5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.confirmation-header h2 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.hotel-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.hotel-info h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.rating {
+    color: gold;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.hotel-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.reservation-details, .payment-info {
+    margin: 20px 0;
+    padding: 12px;
+    border: 1.3px solid #b6d3c3;
+    border-radius: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modify-btn {
+    background-color: transparent;
+    border: none;
+    color: #2dc79e;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.reservation-details p, .payment-info p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.payment-info h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.confirm-btn, .cancel-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.confirm-btn {
+    background-color: #2dc79e;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.cancel-btn {
+    background-color: #f0f0f0;
+    color: #555;
+}

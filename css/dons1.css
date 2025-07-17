@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+/* Header */
+header {
+    background-color: #26c9a8;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    direction: ltr; /* هذا هو المفتاح لحل مشكل الاتجاه */
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* Help button */
+.help-button {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.help-btn {
+    background-color: #38d1e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.help-btn i {
+    font-size: 0.85rem;
+    background-color: white;
+    color: #26c9a8;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main content */
+.main-content {
+    padding: 0 20px 30px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.case-header {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.case-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 25px;
+}
+
+.case-content {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.case-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.case-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-details h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.case-details p {
+    font-size: 0.87rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Progress */
+.progress-container {
+    margin-bottom: 12px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    overflow: hidden;
+    direction: ltr;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #26c9a8;
+    border-radius: 5px;
+}
+
+.progress-text {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: #444;
+    direction: ltr;
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.docs-btn {
+    background-color: transparent;
+    color: #4285F4;
+    border: 1px solid #4285F4;
+    border-radius: 25px;
+    padding: 9px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.docs-btn i {
+    color: #4285F4;
+}
+
+.donate-btn {
+    background-color: #26c9a8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.75rem;
+    color: #888;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .case-content {
+        gap: 10px;
+    }
+
+    .case-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .case-details h4 {
+        font-size: 0.95rem;
+    }
+
+    .case-details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        border-radius: 10px;
+        margin: 20px 0;
+        min-height: auto;
+    }
+}

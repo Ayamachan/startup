@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f9f4;
+}
+
+.app-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #f0f9f4;
+    min-height: 100vh;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+header {
+    background-color: #2dc79e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.notification-icon, .menu-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 15px;
+}
+
+/* Title Section */
+.title-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.back-button {
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.back-button i {
+    color: #2dc79e;
+}
+
+.title-section h1 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.location-icon {
+    color: #48b0f7;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.category-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 20px; /* إضافة مسافة أسفل التبويبات */
+}
+
+.category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab {
+    padding: 10px 12px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    flex: 1;
+    min-width: min-content;
+}
+
+.tab.active {
+    color: #333;
+    border-bottom: 3px solid #2dc79e;
+    font-weight: 700;
+}
+
+/* إضافة مساحة بين التبويبات وشبكة العناصر */
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px; /* إضافة مساحة أعلى الشبكة */
+    padding-top: 5px; /* إضافة تباعد إضافي */
+}
+
+.attraction-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.attraction-card h3 {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.view-more-btn {
+    background-color: transparent;
+    color: #58b7f5;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600; /* إضافة هذه الخاصية لجعل النص غامقاً */
+}
+
+@media screen and (max-width: 350px) {
+    .tab {
+        padding: 10px 8px;
+        font-size: 0.75rem;
+    }
+}

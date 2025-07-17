@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    background-color: #26c9a8;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+/* Progress bar styles */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.progress-item.active {
+    color: #26c9a8;
+}
+
+.step-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+}
+
+.progress-item.active .step-circle {
+    background-color: #26c9a8;
+    color: white;
+}
+
+.progress-arrow {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Payment content styles */
+.payment-content {
+    padding: 20px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.back-button i {
+    color: #26c9a8;
+    font-size: 1.5rem;
+}
+
+.card-image-container {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Form styles */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #26c9a8;
+    background-color: #fff;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.checkbox-container label {
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.payment-button {
+    background-color: #26c9a8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.payment-button:hover {
+    background-color: #20b69a;
+}
+
+/* Date Picker Styles */
+.date-picker {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 100;
+    margin-top: 5px;
+    display: none;
+}
+
+.month-year-selector {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.selector-header {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.selector-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.month-selector, .year-selector {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.month-selector label, .year-selector label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.month-selector select, .year-selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.confirm-btn {
+    background-color: #26c9a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.confirm-btn:hover {
+    background-color: #20b69a;
+}
